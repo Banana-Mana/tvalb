@@ -1,0 +1,232 @@
+// Carousel Start
+$red: #cd040b;
+$black: #000000;
+$white: #fff;
+$grey: #3e3e3e;
+$green: #58a612;
+
+.slideshow{
+  .carousel-inner{
+    overflow:visible;
+  }
+  background-image: -moz-linear-gradient( 90deg, rgb(245,245,245) 0%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(245,245,245) 0%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(245,245,245) 0%, rgb(255,255,255) 100%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height:550px;
+  .item1{
+    .container{
+      display: flex;
+    }
+  }
+  h1,h2,h3,h4,h5,h6{
+    font-weight:bold;
+    color:inherit;
+  }
+
+  h1{
+    font-size:1.538em;
+    text-transform:uppercase;
+  }
+  h2{
+    font-size:1.363em;
+  }
+  h3{
+    font-size:1.438em;
+    text-transform: uppercase;
+  }
+  p{
+    font-size:0.938em;
+  }
+  .item{
+  }
+  .item1{
+    ul{
+      list-style-image: url(img/tick.png);
+    }
+  }
+  .item2{
+    p{
+      margin:30px 0;
+      font-size:1.125em;
+    }
+    .slidevods{
+      img{
+        margin-top:30px;
+        position: relative;
+        max-width: 100%;
+        height: auto;
+        &:first-of-type{
+          right:-30px;
+          z-index:1;
+        }
+        &:nth-of-type(2){
+          left:-30px;
+          top:-30px;
+        }
+      }
+    }
+  }
+  .item3{
+    .container{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background:url(img/beach.png) no-repeat;
+      background-position: top center;
+    }
+    strong{
+      color:$red;
+    }
+  }
+
+  .item4{
+    ul{
+      li{
+        margin-bottom:10px;
+      }
+    }
+    img.mainbox{
+      position: relative;
+      left: -95px;
+      margin-bottom: -115px;
+    }
+    .box2, .box3{
+      position: absolute;
+      left:0;
+    }
+    .box2{
+      z-index:1;
+    }
+    .box3{
+      z-index:2;
+    }
+    h5{
+      font-size:1.375em;
+    }
+  }
+
+  .item5{
+    &.active {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &.football{
+      background:url(img/bg_football.png) no-repeat;
+      height:550px;
+    }
+    .jackInTheBox{
+      margin-top:20px;
+      margin-bottom:20px;
+    }
+    h5{
+      font-size:1.125em;
+      color:$green;
+    }
+    h6{
+      font-size:1.313em;
+    }
+    .futbol-text{
+      margin: 0 auto;
+    }
+  }
+
+  .item6{
+    .tv2{
+      position: absolute;
+      left:0;
+    }
+    ul{
+      list-style:none;
+      li{
+        background:url(img/check1.png) no-repeat left center;
+        color:$red;
+        font-size:1.313em;
+        padding-left:30px;
+        margin:20px 0;
+      }
+    }
+    h4{
+      font-size:1.563em;
+    }
+    .freeBox{
+      position: relative;
+      bottom: -50px;
+    }
+  }
+
+
+  .slide-control{
+    position: absolute;
+    top: calc(50% - 23px);
+    width:25px;
+    height:45px;
+    &.left{
+      left:10%;
+      background:url(img/arrow-left.png) no-repeat;
+    }
+    &.right{
+      right:10%;
+      background:url(img/arrow-right.png) no-repeat;
+    }
+  }
+}
+// Carousel End
+
+
+// Responsive Rules Start
+
+// Homepage Responsive
+@media screen and (max-width:768px){
+  .slideshow{
+    .item4{
+      .item4-boxes{
+        text-align:center;
+        margin-top: -150px;
+      }
+      .item4-list{
+        text-align: center;
+      }
+      img.mainbox {
+        left:auto;
+        margin:0;
+      }
+    }
+  }
+}
+@media screen and (max-width:440px){
+  .slideshow{
+    min-height: 350px;
+    .item2 .slidevods img:first-of-type {
+      right: 0;
+    }
+    .item3 h4 + img{
+      width:100%;
+    }
+    .item4 img.mainbox {
+      left: auto;
+      margin: 30px 0 0 10px;
+      width: 100%;
+    }
+    .item6 {
+      margin-bottom:75px;
+      ul{
+        list-style: none;
+        text-align:left;
+      }
+      .freeBox{
+        width:100%;
+        &+ img{
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+// Responsive Rules End

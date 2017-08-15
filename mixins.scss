@@ -1,0 +1,51 @@
+// Delay Animation Mixin - Requires time
+@mixin delay-animation($delay){
+  -webkit-animation-delay: $delay;
+  -moz-animation-delay: $delay;
+  -o-animation-delay: $delay;
+  animation-delay: $delay;
+}
+
+// Animation Mixin - Requires Time
+@mixin transition($transition) {
+  -moz-transition:    all $transition cubic-bezier(.17,.67,.83,.67);;
+  -o-transition:      all $transition cubic-bezier(.17,.67,.83,.67);;
+  -webkit-transition: all $transition cubic-bezier(.17,.67,.83,.67);;
+  transition:         all $transition cubic-bezier(.17,.67,.83,.67);;
+}
+
+// Gradient Mixin - Requires Color
+@mixin gradient($color){
+  background: $color; /* Old browsers */
+  background: -moz-linear-gradient(left, $color 0%, darken($color, 10%) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, $color 0%, darken($color, 10%) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, $color 0%, darken($color, 10%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+@mixin gradient-vertical($color){
+  background: $color; /* Old browsers */
+  background: -moz-linear-gradient(top, darken($color, 10%) 0%, $color 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, darken($color, 10%) 0%, $color 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to top, darken($color, 10%) 0%, $color 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+
+@mixin plan_colors($color){
+  h2{
+    color:lighten($color, 10%);
+  }
+  .channels{
+    background:darken($color, 5%);
+    .pricing{
+      background:$color;
+    }
+  }
+  .extras{
+    background:darken($color, 15%);
+  }
+  .select-btn{
+    background:lighten($color, 5%);
+    &:hover{
+      background:darken($color, 10%);
+    }
+  }
+}

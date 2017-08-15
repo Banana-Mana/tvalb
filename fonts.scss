@@ -1,0 +1,54 @@
+@font-face
+{
+  font-family: 'Gotham Rounded';
+  font-weight: 400;
+  font-style: normal;
+
+  src:
+          url(fonts/GothamRounded.woff2) format('woff2'),
+          url(fonts/GothamRounded.woff) format('woff'),
+          url(fonts/GothamRounded.otf) format('otf'),
+          url(fonts/GothamRounded.ttf) format('truetype'),
+          url(fonts/GothamRounded.svg) format('svg'),
+          url(fonts/GothamRounded.eot) format('eot');
+}
+@font-face
+{
+  font-family: 'Roboto Regular';
+  font-weight: 800;
+  font-style: normal;
+
+  src:
+          url(fonts/Roboto-Regular.woff2) format('woff2'),
+          url(fonts/Roboto-Regular.woff) format('woff'),
+          url(fonts/Roboto-Regular.otf) format('otf'),
+          url(fonts/Roboto-Regular.ttf) format('truetype'),
+          url(fonts/Roboto-Regular.svg) format('svg'),
+          url(fonts/Roboto-Regular.eot) format('eot');
+}
+@font-face
+{
+  font-family: 'Roboto Regular';
+  font-weight: 300;
+  font-style: normal;
+  src:
+          url(fonts/Roboto-Light.woff2) format('woff2'),
+          url(fonts/Roboto-Light.woff) format('woff'),
+          url(fonts/Roboto-Light.otf) format('otf'),
+          url(fonts/Roboto-Light.ttf) format('truetype'),
+          url(fonts/Roboto-Light.svg) format('svg'),
+          url(fonts/Roboto-Light.eot) format('eot');
+}
+@font-face
+{
+  font-family: 'Roboto Regular';
+  font-weight: 700;
+  font-style: normal;
+  src:
+          url(fonts/Roboto-Bold.woff2) format('woff2'),
+          url(fonts/Roboto-Bold.woff) format('woff'),
+          url(fonts/Roboto-Bold.otf) format('otf'),
+          url(fonts/Roboto-Bold.ttf) format('truetype'),
+          url(fonts/Roboto-Bold.svg) format('svg'),
+          url(fonts/Roboto-Bold.eot) format('eot');
+}

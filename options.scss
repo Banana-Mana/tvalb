@@ -1,0 +1,69 @@
+@import 'global';
+
+// options text
+.options-text{
+  color:$white;
+  text-align:center;
+  padding:20px 0;
+  @include gradient($ironblue);
+  h1{
+    font-weight:700;
+    text-transform: uppercase;
+    font-size:0.813em;
+  }
+}
+// options text ends
+
+//Boxes
+.boxes{
+  display:flex;
+  margin-top:20px;
+  margin-bottom:20px;
+  position:relative;
+  .box{
+    @include transition(170ms);
+    position: relative;
+    top:0;
+    cursor:pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:100%;
+    border-radius:5px;
+    padding:20px;
+    box-shadow:0 0 21px lighten($black, 90%);
+    text-align:center;
+    img.img-responsive{
+      display: inline-block;
+    }
+    h2{
+      margin:10px 0 15px 0;
+      font-size:0.938em;
+      font-weight:700;
+    }
+
+    &:hover{
+      box-shadow:0 8px 20px $lightBlue;
+      top:-5px;
+    }
+    &.active{
+      box-shadow:0 8px 20px $calciumred;
+      top:-5px;
+      @include gradient-vertical($white);
+    }
+    &:after{
+      position: absolute;
+      left:0;
+      right:0;
+      bottom:5px;
+      content:' ';
+      width:90%;
+      margin:0 auto;
+
+      height:2px;
+      background:$lightBlue;
+    }
+  }
+}

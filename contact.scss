@@ -1,0 +1,36 @@
+@import 'global';
+
+/*main-header*/
+.main-header {
+  margin: 0 auto;
+  @include gradient($green);
+  padding: 10px;
+  h1 {
+    color: $white;
+    font-size: 1.125em;
+    font-weight: 300;
+  }
+}
+
+/*main-header Ends*/
+/*Address*/
+.contact-us {
+  margin: 66px auto 0 auto;
+  max-width: 850px;
+  h2{
+    margin-bottom:20px;
+  }
+  p{
+    margin: 17px;
+
+    font-weight: 300;
+  }
+  img{
+    margin-right:10px;
+    margin-left: 10px;
+  }
+  .img-responsive{
+    margin:0 auto;
+  }
+}
+/*Address Ends*/

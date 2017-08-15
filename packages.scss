@@ -1,0 +1,269 @@
+@import 'global';
+@import 'carousel';
+
+
+.number_1{
+  max-width: 726px;
+  border-bottom: 1px solid darken($lightGrey, 10%);
+  margin-top:100px;
+  padding-bottom: 40px;
+  h2{
+    font-size: 40px;
+    strong{
+      font-weight: bold;
+      color: darken($ironblue, 20%);
+    }
+  }
+  .margin_txt{
+    margin-top:40px;
+  }
+  p{
+    font-size: 12px;
+  }
+}
+.sc-container{
+    justify-content: center;
+    align-items: baseline;
+}
+.column-3{
+  position: relative;
+  float: left;
+  width:calc(33.333% - 60px);
+  padding:15px;
+  margin:0 15px;
+}
+.plans{
+  opacity:0;
+  padding:0;
+  margin-bottom:30px;
+  margin-top:30px;
+  border-radius: 3px;
+  box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.15);
+  text-align:center;
+
+  ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+  }
+  &.plan1{
+    background:lighten($lightBlue, 35%);
+    @include plan_colors($ironblue);
+  }
+  &.plan2{
+    background:lighten($calciumred, 38%);
+    @include plan_colors($calciumred);
+  }
+  &.plan3{
+    background:lighten($poopyellow, 45%);
+    @include plan_colors($poopyellow);
+  }
+  &.plan1, &.plan2, &.plan3{
+    h1{
+      font-size:1.429em;
+      color:rgba(0,0,0,.6);
+      text-align:center;
+      text-transform:uppercase;
+      line-height: 1;
+    }
+    h2{
+      i{
+        font-size:1.5em;
+        margin-bottom: 10px;
+      }
+      small{
+        color:white;
+      }
+      line-height: 1;
+    }
+    .channels{
+      padding:0 0 20px 0;
+      position: relative;
+      margin-top:40px;
+      &:after{
+        content:'\f0fe';
+        font-family: 'FontAwesome', sans-serif;
+        font-size:1.714em;
+        position: absolute;
+        bottom:-17px;
+        color:white;
+        left:20px;
+      }
+      ul{
+        margin:0 auto;
+      }
+      li{
+        color:white;
+        line-height:2;
+        text-align:left;
+        text-indent: 10%;
+      }
+      .pricing{
+        color:white;
+        display: inline-block;
+        padding:10px 30px;
+        position: relative;
+        top:-30px;
+        margin-bottom:-15px;
+        border-radius: 5px;
+        box-shadow: 0 4px 13px 0 rgba(0, 0, 0, 0.1);
+        h2{
+          font-size: 1.571em;
+          margin: 0;
+          color:white;
+          small{
+            font-size: 0.545em;
+            text-align: center;
+            width: 100%;
+            float: left;
+            margin: 0;
+          }
+        }
+      }
+    }
+    .extras{
+      padding:20px 0;
+      color:white;
+      border-bottom-left-radius:3px;
+      border-bottom-right-radius:3px;
+    }
+    .select-btn{
+      font-weight:500;
+      color:white;
+      padding: 7px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      bottom: -20px;
+      max-width: 130px;
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1),inset 1px 1px 0 0 rgba(255, 255, 255, 0.3);
+      @include transition(300ms ease-in);
+    }
+  }
+  .package{
+    margin: 25px;
+  }
+}
+/*platform Starts*/
+.bg_platform{
+  margin-top: 120px;
+  background: url("img/packages/bg_platform.png") no-repeat;
+  height: 30vh;
+ h2{
+   font-size: 20px;
+   font-weight:700;
+ }
+  p{
+    font-size: 10px;
+  }
+  .package{
+    margin-top: 25px;
+  }
+}
+/*platform Ends*/
+
+/*video on demand Starts*/
+.bg_vod{
+  background: url("img/packages/bg_pack.png") no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid darken($lightGrey, 10%);
+  border-top: 1px solid darken($lightGrey, 10%);
+  .vod-inner{
+    padding: 78px 0 68px 0;
+    .little_txt {
+      h4 {
+        font-size: 10px;
+      }
+      h3{
+        font-size: 40px;
+        strong{
+          font-weight: 300;
+          color:$calciumred;
+          font-size: 62px;
+        }
+      }
+    }
+    .margin_txt{
+      margin-top:40px;
+    }
+    .bottom_txt p{
+      padding-top: 30px;
+      max-width: 785px;
+      margin:0 auto;
+    }
+  }
+}
+/*video on demand Ends*/
+
+/*Catch up Start*/
+.catch_bg{
+  padding:80px 0 142px 0;
+  .margin_txt{
+    margin-top:40px;
+  }
+  h4 {
+    font-size: 10px;
+  }
+  h3{
+    font-size: 40px;
+    margin-bottom: 70px;
+    strong{
+      font-weight: 300;
+      color:darken($ironblue, 10%);
+      font-size: 62px;
+    }
+  }
+  .bottom_txt p{
+    padding-top: 30px;
+    max-width: 785px;
+    margin:0 auto;
+  }
+}
+
+/*Catch up Ends*/
+
+@media (max-width: 768px) {
+  .column-3{
+    width: 30%;
+
+    padding: 0;
+    margin:30px 1% 30px 1%;
+  }
+  .bg_platform{
+    margin-top: 20px;
+    background: url("img/packages/bg_platform_templ.png")no-repeat;
+    background-position: 0 150px;
+    height: 400px;
+  }
+
+  .catch_bg{
+    padding: 40px 0 70px 0;
+  }
+  .plans .package{
+    margin:10px 0 25px 0;
+  }
+  .number_1{
+    margin-top: 0;
+  }
+  .bg_vod .vod-inner{
+    padding:0;
+  }
+}
+@media (max-width:414px){
+  .column-3{
+    width:100%;
+  }
+  .plans .package{
+    margin:25px;
+  }
+  .number_1{
+    margin-top: 0;
+  }
+  .bg_vod .vod-inner{
+    padding:0 0 10px 0;
+  }
+}
