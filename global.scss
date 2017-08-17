@@ -48,35 +48,33 @@ $ironblue: #1ca3d5;
 $calciumred: #ec4060;
 $poopyellow: #FFB300;
 
-.red{
-  color:$red;
-}
-
-
-
-.btn-orange{
-  color: white;
-  padding: 15px 70px;
-  background: #f2b100;
-  border-radius: 30px;
-  text-transform: uppercase;
-  box-shadow: 5px 3px 9px 0 rgba(0, 0, 0, 0.28);
-  @include transition(200ms);
-  &:active, &.active, &:hover {
-    outline: 0;
-    background:#e9135a;
-    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 5px 3px 9px 0 rgba(0, 0, 0, 0.28);
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 5px 3px 9px 0 rgba(0, 0, 0, 0.28);
-    color:white;
-  }
-}
-
 body,html{
   padding:0;
   margin:0;
   font-size: 16px;
   color: rgba(0,0,0,.7);
   font-family: "Gotham Rounded", sans-serif;
+}
+
+.red{
+  color:$red;
+}
+
+.inline-block{
+  display: inline-block;
+  float: none;
+}
+
+.row-flexy{
+  display: flex;
+  align-items: center;
+}
+
+.btn-orange{
+  @include button($poopyellow);
+}
+.btn-green{
+  @include button($green);
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -99,6 +97,10 @@ a {
     text-decoration: underline;
     color: $red;
   }
+}
+
+.list-inline{
+  list-style: circle !important;
 }
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {

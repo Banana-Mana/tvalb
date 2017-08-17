@@ -49,3 +49,22 @@
     }
   }
 }
+
+@mixin button($color){
+  color: white;
+  padding: 15px 70px;
+  background: $color;
+  border-radius: 30px;
+  text-transform: uppercase;
+  -webkit-box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.05), 5px 3px 9px 0 rgba(0, 0, 0, 0.28);
+  box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.05), 5px 3px 9px 0 rgba(0, 0, 0, 0.28);
+  @include transition(200ms);
+  &:active, &.active, &:hover {
+    outline: 0;
+    background:darken($color, 5%);
+    -webkit-box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.2), 5px 3px 9px 0 rgba(0, 0, 0, 0.28);
+    box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.2), 5px 3px 9px 0 rgba(0, 0, 0, 0.28);
+    color:white;
+  }
+
+}
