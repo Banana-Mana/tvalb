@@ -57,6 +57,7 @@
   animation-delay: 1250ms; }
 
 body, html {
+  width: 100%;
   padding: 0;
   margin: 0;
   font-size: 16px;
@@ -504,5 +505,21 @@ p {
     .option-block .block-pcMac .option-settings ul li:before {
       content: '\25cf\a0';
       color: #54bce3; }
+
+@media screen and (max-width: 440px) {
+  .option-block .block-pcMac .twinbuttons a {
+    margin: 30px; }
+  .option-block .block-pcMac .option-settings ul li {
+    margin: 0 20px;
+    padding: 0;
+    display: block;
+    position: relative;
+    text-align: left; }
+
+  .row-flexy {
+    flex-direction: column; }
+
+  .col-md-5in1 {
+    padding: 0; } }
 
 /*# sourceMappingURL=options.css.map */

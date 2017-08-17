@@ -204,3 +204,28 @@
   } // PCMAC Block Ends
 }
 // Option-Block Ends
+
+@media screen and (max-width:440px){
+  .option-block{
+    .block-pcMac
+    {
+      .twinbuttons a {
+        margin: 30px;
+      }
+      .option-settings ul li {
+        margin: 0 20px;
+        padding: 0;
+        display: block;
+        position: relative;
+        text-align: left;
+      }
+    }
+
+  }
+  .row-flexy{
+    flex-direction: column;
+  }
+  .col-md-5in1{
+    padding:0;
+  }
+}

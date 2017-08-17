@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Opcione - TVALB</title>
+    <meta name=viewport content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="options.css">
@@ -81,32 +82,32 @@
 
 <!-- Boxes -->
 <div class="container boxes">
-    <div class="col-md-5in1 animated zoomIn delay-125ms">
-        <div class="box" id="box4k">
+    <div class="col-md-5in1 col-xs-5in1 animated zoomIn delay-125ms">
+        <div class="box" id="block-box4k">
             <h2>TV ALB 4K BOX</h2>
             <img src="img/options/box-small.png" alt="4k iptv box" class="img-responsive">
         </div>
     </div>
-    <div class="col-md-5in1 animated zoomIn delay-250ms">
-        <div class="box" id="smartTv">
+    <div class="col-md-5in1 col-xs-5in1 animated zoomIn delay-250ms">
+        <div class="box" id="block-smartTV">
             <h2>SMART TV APP</h2>
             <img src="img/options/smart-tv-icon.png" alt="iptv on smart tvs" class="img-responsive">
         </div>
     </div>
-    <div class="col-md-5in1 animated zoomIn delay-500ms">
-        <div class="box" id="androidBox">
+    <div class="col-md-5in1 col-xs-5in1 animated zoomIn delay-500ms">
+        <div class="box" id="block-androidBox">
             <h2>ANDROID BOX</h2>
             <img src="img/options/android-box.png" alt="android iptv" class="img-responsive">
         </div>
     </div>
-    <div class="col-md-5in1 animated zoomIn delay-750ms">
-        <div class="box active" id="pcMac">
+    <div class="col-md-5in1 col-xs-5in1 animated zoomIn delay-750ms">
+        <div class="box active" id="block-pcMac">
             <h2>PC / MAC / LINUX</h2>
             <img src="img/options/iptv-pc.png" alt="iptv on pc" class="img-responsive">
         </div>
     </div>
-    <div class="col-md-5in1 animated zoomIn delay-1s">
-        <div class="box" id="smartPhone">
+    <div class="col-md-5in1 col-xs-5in1 animated zoomIn delay-1s">
+        <div class="box" id="block-smartPhone">
             <h2>SMART PHONE</h2>
             <img src="img/options/smart-phone.png" alt="iptv on smart phone" class="img-responsive">
         </div>
@@ -115,9 +116,9 @@
 <!-- Boxes End -->
 
 <!-- Option Block -->
-<div class="container-fluid option-block">
+<div class="container-fluid option-block" id="option-block">
     <!-- PC - MAC Block -->
-        <div id="block-pcMac" class="container-fluid block-pcMac">
+        <div class="container-fluid blocks block-pcMac">
             <div class="container">
 
                 <h2 class="text-center">PC / MAC / LINUX</h2>
@@ -130,16 +131,16 @@
                     <div class="col-md-6 text-right"><img src="img/options/pc.png" alt="pc application iptv" class="img-responsive inline-block"></div>
                     <div class="col-md-6">
                         <ul>
-                            <li>1000+ Kanale nga e ghithë Bota</li>
-                            <li>200+ Kanale Shqip </li>
-                            <li>Kanale High Definition </li>
-                            <li>Shumë e leht për tu instaluar </li>
-                            <li>EPG Guida Elektonike Progamore</li>
-                            <li>7 Ditë kthim në kohë </li>
-                            <li>10.000 orë Video on Demand  </li>
-                            <li>Krijo kanalet tuaj të preferuara</li>
-                            <li>Radiot më të popullarizuara Shqip</li>
-                            <li>Ndryshoni formatin e ekranit - 4: 3, 16: 9, 16:10 and 5:4</li>
+                            <li class="animated fadeInRight delay-125ms">1000+ Kanale nga e ghithë Bota</li>
+                            <li class="animated fadeInRight delay-125ms">200+ Kanale Shqip </li>
+                            <li class="animated fadeInRight delay-250ms">Kanale High Definition </li>
+                            <li class="animated fadeInRight delay-250ms">Shumë e leht për tu instaluar </li>
+                            <li class="animated fadeInRight delay-500ms">EPG Guida Elektonike Progamore</li>
+                            <li class="animated fadeInRight delay-500ms">7 Ditë kthim në kohë </li>
+                            <li class="animated fadeInRight delay-750ms">10.000 orë Video on Demand  </li>
+                            <li class="animated fadeInRight delay-750ms">Krijo kanalet tuaj të preferuara</li>
+                            <li class="animated fadeInRight delay-1s">Radiot më të popullarizuara Shqip</li>
+                            <li class="animated fadeInRight delay-1s">Ndryshoni formatin e ekranit - 4: 3, 16: 9, 16:10 and 5:4</li>
                         </ul>
                     </div>
                 </div>
@@ -164,8 +165,8 @@
                                 kryesore të navigimit dhe informacionit.
                             </p>
                         </div>
-                        <div class="col-md-6 text-left">
-                            <img src="img/options/pc-instructions.png" alt="instructions iptv" class="img-responsive inline-block">
+                        <div class="col-md-6 text-left instructions">
+                            <img src="img/options/pc-instructions.png" alt="instructions iptv" class="img-responsive inline-block ">
                         </div>
                     </div>
                 </div>
@@ -180,7 +181,7 @@
                     </h3>
                 </div>
 
-                <div class="row option-description">
+                <div class="row option-description" id="option-description-1">
                     <div class="option-roof">1</div>
                         <div class="col-md-12">
                             <div class="col-md-6">
@@ -199,16 +200,16 @@
                         </div>
 
                     <div class="container-fluid">
-                        <div class="col-md-6 text-center">
+                        <div class="col-md-6 col-sm-6 text-center">
                             <img src="img/options/channels.png" alt="iptv channels" class="img-responsive inline-block">
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-sm-6">
                             <img src="img/options/search-tv.png" alt="search iptv tv channels" class="img-responsive inline-block">
                         </div>
                     </div>
                 </div>
 
-                <div class="row option-description">
+                <div class="row option-description" id="option-description-2">
                     <div class="option-roof">2</div>
                     <div class="col-md-12">
                         <div class="col-md-6">
@@ -225,16 +226,16 @@
                         </div>
                     </div>
                     <div class="container-fluid">
-                        <div class="col-md-6 text-center">
+                        <div class="col-md-6 col-sm-6 text-center">
                             <img src="img/options/tv-categories.png" alt="iptv categories" class="img-responsive inline-block">
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-sm-6">
                             <img src="img/options/tv-timeshift.png" alt="timeshift features" class="img-responsive inline-block">
                         </div>
                     </div>
                 </div>
 
-                <div class="row option-description">
+                <div class="row option-description" id="option-description-3">
                     <div class="option-roof">3</div>
                     <div class="col-md-12">
                         <div class="row row-flexy">
@@ -247,13 +248,13 @@
                                 </p>
                             </div>
                             <div class="col-md-6">
-                                <img src="img/options/tv-tv.png" alt="iptv news channels">
+                                <img src="img/options/tv-tv.png" alt="iptv news channels" class="img-responsive">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="row option-description">
+                <div class="row option-description" id="option-description-4">
                     <div class="container text-center">
                         <h3>
                             <img src="img/options/vod-icon.png" alt="video on demand">
@@ -294,35 +295,40 @@
             </div>
 
             <div class="container text-center">
-                <h3>
-                    <img src="img/options/catchup-icon.png" alt="catchup iptv">
-                    Opcioni CATCHUP
-                    <small>
-                        Opcioni radio Opcioni Catchup ju mundëson të ktheheni 7 ditë mbrapa në kohë. Pra me kete opcion
-                        ju mund të shikoni përmbajtjen e  kanaleve kryesore për 7 ditet e kaluara.
-                    </small>
-                </h3>
-                <img src="img/options/catchup-img.png" alt="IPTV Catchup DVR" class="img-responsive inline-block">
-                <p>
-                    Pasi te keni klikuar opcioni Catchup ne ekran do te shfaqet ne anen e majt lista me kanale kryesore
-                    Shqip, në mes të ekrani ditët e javës si dhe në anen e djath ora e prorgameve të kanalit që keni zgjedhur.
-                </p>
-                <h3>
-                    <img src="img/options/epg-icon.png" alt="electronic program guide iptv">
-                    Opcioni EPG
-                </h3>
-                <br>
-                <div class="col-md-6">
-                    <img src="img/options/pc-epg.png" alt="pc application iptv epg">
-                </div>
-                <div class="col-md-6 text-left">
+                <div class="row option-catchup">
+                    <h3>
+                        <img src="img/options/catchup-icon.png" alt="catchup iptv">
+                        Opcioni CATCHUP
+                        <small>
+                            Opcioni radio Opcioni Catchup ju mundëson të ktheheni 7 ditë mbrapa në kohë. Pra me kete opcion
+                            ju mund të shikoni përmbajtjen e  kanaleve kryesore për 7 ditet e kaluara.
+                        </small>
+                    </h3>
+                    <img src="img/options/catchup-img.png" alt="IPTV Catchup DVR" class="img-responsive inline-block">
                     <p>
-                        Guida progamore elektronike apo EPG ju mundëson të shikoni skemen programore të secilit kanal.
-                    </p>
-                    <p>
-                        Ju mjafton vetem te klikoni në kanalin që dëshironi dhe do ju shfaqet skema progranore  si dhe kanali live të cilin e keni selektuar.
+                        Pasi te keni klikuar opcioni Catchup ne ekran do te shfaqet ne anen e majt lista me kanale kryesore
+                        Shqip, në mes të ekrani ditët e javës si dhe në anen e djath ora e prorgameve të kanalit që keni zgjedhur.
                     </p>
                 </div>
+                <div class="row option-epg">
+                    <h3>
+                        <img src="img/options/epg-icon.png" alt="electronic program guide iptv">
+                        Opcioni EPG
+                    </h3>
+                    <br>
+                    <div class="col-md-6">
+                        <img src="img/options/pc-epg.png" alt="pc application iptv epg" class="img-responsive">
+                    </div>
+                    <div class="col-md-6 text-left">
+                        <p>
+                            Guida progamore elektronike apo EPG ju mundëson të shikoni skemen programore të secilit kanal.
+                        </p>
+                        <p>
+                            Ju mjafton vetem te klikoni në kanalin që dëshironi dhe do ju shfaqet skema progranore  si dhe kanali live të cilin e keni selektuar.
+                        </p>
+                    </div>
+                </div>
+
             </div>
 
             <div class="container text-center option-settings">
@@ -333,7 +339,7 @@
                 <p>
                     Ne opcionin Settings jane informatat  e software-it të cilin e keni instalur ne kompjuterin tuaj. Këto informata janë të nevojshme kur komunikoni me sherbimin për konsumator të TvAlb.
                 </p>
-                <img src="img/options/pc-settings-pic.png" alt="iptv settings opcioni">
+                <img src="img/options/pc-settings-pic.png" alt="iptv settings opcioni" class="img-responsive">
                 <ul>
                     <li>Account ID</li>
                     <li>Package</li>
@@ -352,23 +358,35 @@
     <!-- PC - MAC BlockEnds -->
 
     <!-- TV ALB 4k BOX BLOCK -->
-        <div class="container-fluid block-box4k hidden" id="block-box4k">
+        <div class="container-fluid blocks block-box4k hidden">
             <div class="container">
-                dfgo
+                4k box block
             </div>
         </div>
     <!-- TV ALB 4k BOX BLOCK Ends -->
 
     <!-- SMART TV BLOCK -->
-        <div class="container-fluid block-smartTV hidden" id="block-smartTV"></div>
+        <div class="container-fluid blocks block-smartTV hidden">
+            <div class="container">
+                smart tv block
+            </div>
+        </div>
     <!-- SMART TV BLOCK ENDS -->
 
     <!-- ANDROID BOX BLOCK -->
-        <div class="container-fluid block-androidBox hidden" id="block-androidBox"></div>
+        <div class="container-fluid blocks block-androidBox hidden">
+            <div class="container">
+                android box block
+            </div>
+        </div>
     <!-- ANDROID BOX BLOCK ENDS -->
 
     <!-- SMART PHONE -->
-        <div class="container-fluid block-smartPhone hidden" id="block-smartPhone"></div>
+        <div class="container-fluid blocks block-smartPhone hidden">
+            <div class="container">
+                smartphone block
+            </div>
+        </div>
     <!-- SMART PHONE ENDS-->
 </div>
 <!-- Option Block Ends-->
@@ -435,12 +453,53 @@
 
 <script>
     $(window).scroll(function () {
-        if ($('.packages').isOnScreen() == true) {
-            $('.packages .plan1').addClass('animated fadeInLeft');
-            $('.packages .plan2').addClass('animated fadeInUp');
-            $('.packages .plan3').addClass('animated fadeInRight');
+        if ($('.instructions').isOnScreen() == true) {
+            $('.instructions img').addClass('animated flipInX');
+        }
+        if ($('#option-description-1').isOnScreen() == true) {
+            $('#option-description-1 img').addClass('animated fadeInUp delay-125ms');
+        }
+        if ($('#option-description-2').isOnScreen() == true) {
+            $('#option-description-2 img').addClass('animated fadeInUp delay-250ms');
+        }
+        if ($('#option-description-3').isOnScreen() == true) {
+            $('#option-description-3 img').addClass('animated fadeInUp delay-250ms');
+        }
+        if ($('#option-description-4').isOnScreen() == true) {
+            $('#option-description-4 img').addClass('animated fadeInUp delay-250ms');
+        }
+        if ($('.option-catchup').isOnScreen() == true) {
+            $('.option-catchup img').addClass('animated flipInX delay-250ms');
+        }
+        if ($('.option-epg').isOnScreen() == true) {
+            $('.option-epg img').addClass('animated fadeInLeft');
+        }
+        if ($('.option-settings').isOnScreen() == true) {
+            $('.option-settings img').addClass('animated fadeInUp');
         }
     });
+
+    var clickedItem = "";
+
+    //display proper boxes
+    $(".box").click(function (e) {
+        e.preventDefault();
+
+        $(".boxes .box").removeClass('active');
+        $(this).addClass('active');
+
+       clickedItem =  "" + $(this).attr('id');
+        $('#option-block').find('> .blocks').each(function(){
+            if( $(this).hasClass(clickedItem)){
+                $(this).removeClass('hidden');
+            }
+            else{
+                $(this).addClass('hidden');
+            }
+        });
+
+    });
+
 </script>
 </body>
 </html>
