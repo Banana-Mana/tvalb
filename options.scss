@@ -1,18 +1,17 @@
 @import 'global';
 
 // options text
-.options-text {
-  color: $white;
-  text-align: center;
-  padding: 20px 0;
+.options-text{
+  color:$white;
+  text-align:center;
+  padding:20px 0;
   @include gradient($ironblue);
-  h1 {
-    font-weight: 700;
+  h1{
+    font-weight:700;
     text-transform: uppercase;
-    font-size: 0.813em;
+    font-size:0.813em;
   }
 }
-
 // options text ends
 
 //Boxes
@@ -83,128 +82,157 @@
   }
 }
 
+
 // Option-Block
-.option-block {
-  .option-roof {
-    font-weight: 700;
+.option-block{
+  .option-roof{
+    font-weight:700;
     position: relative;
-    margin: 0;
-    padding-top: 15px;
-    font-size: 1.2em;
-    line-height: 30px;
-    color: white;
-    background: transparent;
-    text-align: center;
-    z-index: 2;
-    &:after {
+    margin: 0 0 30px 0;
+    padding-top:15px;
+    font-size:1.2em;
+    line-height:30px;
+    color:white;
+    background:transparent;
+    text-align:center;
+    z-index:2;
+    &:after{
       position: absolute;
-      content: ' ';
-      left: 0;
-      top: 30px;
+      content:' ';
+      left:0;
+      top:30px;
       z-index: -1;
-      height: 100%;
-      width: 100%;
+      height:100%;
+      width:100%;
       border-top: 1px solid $lightBlue;
       border-right: 1px solid $lightBlue;
       border-left: 1px solid $lightBlue;
     }
-    &:before {
-      background: $lightBlue;
-      border-radius: 30px;
+    &:before{
+      background:$lightBlue;
+      border-radius:30px;
       content: ' ';
-      width: 30px;
-      height: 30px;
-      position: absolute;
+      width:30px;
+      height:30px;
+      position:absolute;
       margin: 0 auto;
-      left: 0;
-      right: 0;
-      top: 15px;
-      bottom: 0;
-      z-index: -1;
+      left:0;
+      right:0;
+      top:15px;
+      bottom:0;
+      z-index:-1;
     }
   }
-  .block-pcMac {
-    h2 {
-      color: $lightBlue;
-      padding-bottom: 20px;
-      border-bottom: 1px solid lighten($black, 90%);
+
+  ul{
+    list-style-image: url(img/tick.png);
+  }
+  h3{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      padding-right:20px;
     }
-    h3 {
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      img {
-        padding-right: 20px;
+    small{
+      font-size:50%;
+      margin:0 20px;
+      width: 50%;
+      display: inline-block;
+      text-align: left;
+    }
+  }
+  .hackyHeader{
+    margin-bottom:100px;
+    h4{
+      font-size:2em;
+    }
+    img{
+      float: left;
+      margin-right:10px;
+    }
+    p{
+      overflow:hidden;
+    }
+  }
+  .block-pcMac{
+    h2{
+      color:$lightBlue;
+      padding-bottom:20px;
+      border-bottom:1px solid lighten($black, 90%);
+    }
+    .twinbuttons{
+      margin:50px 0;
+      a{
+        margin:0 30px;
       }
-      small {
-        font-size: 50%;
-        margin: 0 20px;
-        width: 50%;
-        display: inline-block;
-        text-align: left;
-      }
-    }
-    p {
-      max-width: 670px;
-      margin: 20px auto;
-      line-height: 1.7;
-    }
-    ul {
-      list-style-image: url(img/tick.png);
-    }
-    .twinbuttons {
-      margin: 50px 0;
-      a {
-        margin: 0 30px;
-      }
-      :after {
-        content: ' ';
-        height: 1px;
-        width: 100%;
-        position: absolute;
-        bottom: -30px;
-        left: 0;
+      :after{
+        content:' ';
+        height:1px;
+        width:100%;
+        position: absolute ;
+        bottom:-30px;
+        left:0;
         background: #ffffff; /* Old browsers */
         background: -moz-linear-gradient(left, #ffffff 0%, #9a9a9a 50%, #ffffff 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(left, #ffffff 0%, #9a9a9a 50%, #ffffff 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to right, #ffffff 0%, #9a9a9a 50%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1); /* IE6-9 */
+        background: -webkit-linear-gradient(left, #ffffff 0%,#9a9a9a 50%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, #ffffff 0%,#9a9a9a 50%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
       }
     }
 
-    .vod-options {
-      li {
-        margin: 30px 0;
+    .vod-options{
+      li{
+        margin:30px 0;
       }
     }
 
-    .radio-option {
-      padding: 10px 0;
+    .radio-option{
+      padding:10px 0;
       background: $lightGrey url(img/options/radiobg.jpg) no-repeat right;
-      margin: 30px 0;
+      margin:30px 0;
     }
-    .option-settings {
-      ul {
+    .option-settings{
+      ul{
         overflow: auto; /* similar  to clearing the floats... */
         list-style: circle;
-        li {
-          margin: 0 20px;
-          padding: 0;
-          display: inline-block;
+        li{
+          margin:0 20px;
+          padding:0 ;
+          display:inline-block;
           position: relative;
           &:before {
             content: '\25cf\a0';
-            color: $lightBlue;
+            color:$lightBlue;
           }
         }
 
       }
     }
 
-  }
-  // PCMAC Block Ends
-
-  //SmartPhone block Starts
+  } // PCMAC Block Ends
+  .block-box4k{
+    .step1{
+      ul{
+        max-width:650px;
+        margin:0 auto;
+        text-align:left;
+      }
+    }
+    .row{
+      margin-bottom:30px;
+    }
+    li{
+      margin:10px 0;
+    }
+    h2{
+      padding-bottom:20px;
+      border-bottom:1px solid lighten($black, 90%);
+      b{
+        color:$calciumred;
+      }
+    }
+  }// 4K BOX ENDS
   .block-smartPhone {
     h2 {
       display: inline-block;
@@ -245,7 +273,6 @@
     .activized_app {
       max-width: 365px;
     }
-
     .wrapTextHeader {
       max-width: 900px;
       margin: 50px auto;
@@ -280,20 +307,18 @@
     .instal_app {
       margin-bottom: 40px;
     }
-
-    // block-smartPhone ENDS
-  }
-  .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
-    color:#00aef0;
-  }
+    .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+      color:#00aef0;
+    }
+  }// block-smartPhone ENDS
 }
 
 // Option-Block Ends
 
-@media screen and (max-width: 440px) {
-
-  .option-block {
-    .block-pcMac {
+@media screen and (max-width:440px){
+  .option-block{
+    .block-pcMac
+    {
       .twinbuttons a {
         margin: 30px;
       }
@@ -343,7 +368,7 @@
   .row-flexy {
     flex-direction: column;
   }
-  .col-md-5in1 {
-    padding: 0;
+  .col-md-5in1{
+    padding:0;
   }
 }
