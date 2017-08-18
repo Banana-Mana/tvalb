@@ -123,6 +123,13 @@
       z-index:-1;
     }
   }
+  // Radio Option Starts
+  .radio-option{
+    padding:10px 0;
+    background: $lightGrey url(img/options/radiobg.jpg) no-repeat right;
+    margin:30px 0;
+  }
+  // Radio Option Ends
 
   ul{
     list-style-image: url(img/tick.png);
@@ -187,11 +194,7 @@
       }
     }
 
-    .radio-option{
-      padding:10px 0;
-      background: $lightGrey url(img/options/radiobg.jpg) no-repeat right;
-      margin:30px 0;
-    }
+
     .option-settings{
       ul{
         overflow: auto; /* similar  to clearing the floats... */
@@ -212,11 +215,41 @@
 
   } // PCMAC Block Ends
   .block-box4k{
+    ol{
+      list-style:none;
+      li{
+        counter-increment: item;
+        margin:25px 0 ;
+        &:before {
+          margin-right: 10px;
+          content: counter(item);
+          background: $lightBlue;
+          border-radius: 100%;
+          color: white;
+          width: 1.3em;
+          text-align: center;
+          display: inline-block;
+        }
+      }
+    }
     .step1{
       ul{
         max-width:650px;
         margin:0 auto;
         text-align:left;
+      }
+    }
+    .step4{
+      li{
+        &:before{
+          background:$green;
+        }
+      }
+    }
+    .step5{
+      margin-bottom:50px;
+      img{
+        margin-bottom:30px;
       }
     }
     .row{
@@ -361,6 +394,11 @@
       }
       .tick_vod{
         margin: 20px auto;
+      }
+    }
+    .block-box4k{
+      .hackyHeader{
+        margin-bottom:20px;
       }
     }
   }
