@@ -50,6 +50,7 @@ $poopyellow: #FFB300;
 
 body,html{
   width: 100%;
+  overflow-x:hidden;
   padding:0;
   margin:0;
   font-size: 16px;
@@ -77,7 +78,9 @@ body,html{
 .btn-green{
   @include button($green);
 }
-
+.btn-blue{
+  @include button($lightBlue);
+}
 h1,h2,h3,h4,h5,h6{
   font-family: "Roboto Regular", sans-serif;
   &.huge{
