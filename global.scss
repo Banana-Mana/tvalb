@@ -22,6 +22,9 @@
 .delay-250ms{
    @include delay-animation(250ms);
  }
+.delay-375ms{
+  @include delay-animation(375ms);
+}
 .delay-500ms{
   @include delay-animation(500ms);
 }
